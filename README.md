@@ -1,13 +1,8 @@
 <div align="center">
 
-# NVIDIA NIM Q&A Generator
+# ⚡ NVIDIA NIM Q&A Generator
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-FF4B4B)](https://streamlit.io/)
-[![LangChain](https://img.shields.io/badge/LangChain-0.1.0-green)](https://python.langchain.com/)
-[![NVIDIA NIM](https://img.shields.io/badge/NVIDIA-NIM-76B900)](https://www.nvidia.com/en-us/ai-data-science/products/nim/)
-[![License](https://img.shields.io/badge/License-GPL-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://q-a-generator.streamlit.app/)
 
 </div>
 
@@ -43,6 +38,10 @@ Built on a robust technical stack, the application combines LangChain's document
   - Text splitters for creating semantically meaningful chunks
   - Retrieval mechanisms for context-aware Q&A generation
   - Chain-of-thought prompting for improved response quality
+ 
+## Live Demo
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://q-a-generator.streamlit.app/)
 
 ## 🚀 Installation
 
