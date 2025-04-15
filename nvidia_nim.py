@@ -116,6 +116,6 @@ if user_question and "vector_store" in st.session_state:
 elif user_question and "vector_store" not in st.session_state:
     st.warning("Please prepare the document database first by clicking the 'Prepare Document Database' button.")
 
-
-if __name__ == "__main__":
-    main()
+# Remove the main() function call as it doesn't exist
+# if __name__ == "__main__":
+#     main()
