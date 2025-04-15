@@ -15,6 +15,8 @@
 
 The NVIDIA NIM Q&A Generator is a powerful application that leverages NVIDIA's NIM (NVIDIA Inference Microservices) and LLaMa 3 70B model to generate question and answer pairs from PDF documents. This tool allows users to upload PDF files, process them using advanced NLP techniques, and generate comprehensive Q&A pairs based on the document content.
 
+Built on a robust technical stack, the application combines LangChain's document processing capabilities, FAISS vector database for efficient similarity search, and NVIDIA's state-of-the-art AI models to deliver high-quality question and answer generation. The system utilizes semantic embeddings to understand document context and leverages NVIDIA's optimized inference infrastructure for fast, accurate responses.
+
 ## Landing Page
 
 ![Landing Page](landing.png)
@@ -29,11 +31,18 @@ The NVIDIA NIM Q&A Generator is a powerful application that leverages NVIDIA's N
 
 ## 🔧 Technical Architecture
 
-- **Frontend**: Streamlit for the user interface
-- **Embeddings**: NVIDIA AI Embeddings for vector representation
-- **LLM**: Meta's LLaMa 3 70B model via NVIDIA NIM
-- **Vector Store**: FAISS for efficient similarity search
-- **Document Processing**: LangChain's document loaders and text splitters
+- **Frontend**: Streamlit for the user interface with interactive components for document upload and Q&A generation
+- **Embeddings**: NVIDIA AI Embeddings for high-dimensional vector representation of text, optimized for semantic search
+- **LLM**: Meta's LLaMa 3 70B model via NVIDIA NIM (NVIDIA Inference Microservices) for state-of-the-art natural language processing
+- **Vector Store**: FAISS (Facebook AI Similarity Search) for efficient similarity search and retrieval with:  
+  - High-performance indexing of dense vectors
+  - Fast nearest neighbor search capabilities
+  - Memory-efficient storage of document embeddings
+- **Document Processing**: LangChain framework components including:
+  - Document loaders for PDF parsing and extraction
+  - Text splitters for creating semantically meaningful chunks
+  - Retrieval mechanisms for context-aware Q&A generation
+  - Chain-of-thought prompting for improved response quality
 
 ## 🚀 Installation
 
@@ -81,11 +90,17 @@ To use this application, you need a valid NVIDIA API Key that starts with 'nvapi
 
 ## 📊 How It Works
 
-1. **Document Processing**: PDF documents are loaded and split into manageable chunks
-2. **Embedding Creation**: Document chunks are converted into vector embeddings using NVIDIA's embedding model
-3. **Vector Database**: Embeddings are stored in a FAISS vector database for efficient retrieval
-4. **Query Processing**: User queries are processed to retrieve relevant document chunks
-5. **Response Generation**: The LLaMa 3 70B model generates Q&A pairs based on the retrieved chunks
+1. **Document Processing**: PDF documents are loaded using LangChain's document loaders and split into manageable chunks with intelligent text splitters that preserve semantic meaning
+2. **Embedding Creation**: Document chunks are converted into high-dimensional vector embeddings using NVIDIA's NIM embedding models, which capture semantic relationships between text segments
+3. **Vector Database**: Embeddings are stored in a FAISS (Facebook AI Similarity Search) vector database, which provides:
+   - Sub-linear time complexity for similarity search
+   - Efficient indexing of high-dimensional vectors
+   - Optimized memory usage for large document collections
+4. **Query Processing**: LangChain's retrieval mechanisms process user queries to find the most relevant document chunks using cosine similarity in the vector space
+5. **Response Generation**: The LLaMa 3 70B model, served through NVIDIA NIM, generates contextually accurate Q&A pairs based on the retrieved chunks, leveraging:
+   - NVIDIA's optimized inference infrastructure
+   - LangChain's chain-of-thought prompting techniques
+   - Context-aware response generation
 
 ## 🤝 Contributing
 
