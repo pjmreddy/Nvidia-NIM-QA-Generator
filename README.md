@@ -2,8 +2,6 @@
 
 # ⚡ NVIDIA NIM Q&A Generator
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://q-a-generator.streamlit.app/)
-
 </div>
 
 ## 📋 Overview
@@ -39,9 +37,6 @@ Built on a robust technical stack, the application combines LangChain's document
   - Retrieval mechanisms for context-aware Q&A generation
   - Chain-of-thought prompting for improved response quality
  
-## Live Demo
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://q-a-generator.streamlit.app/)
 
 ## 🚀 Installation
 
